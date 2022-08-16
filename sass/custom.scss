@@ -1,0 +1,55 @@
+// Setup Colors Bootstrap
+
+$primary: hsl(244, 38%, 16%);
+$dark: hsl(233, 47%, 7%);
+
+// Setup Colors Style GUide
+$Very-dark-blue: hsl(233, 47%, 7%) (main background);
+$Dark-desaturated-blue: hsl(244, 38%, 16%) (card background);
+$Soft-violet: hsl(277, 64%, 61%) (accent);
+
+$White: hsl(0, 0%, 100%) (main heading, stats);
+$Slightly-transparent-white: hsla(0, 0%, 100%, 0.75) (main paragraph);
+$Slight-transparent-white: hsla(0, 0%, 100%, 0.6) (stat headings);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    font-size: 15px;
+    max-width: 1360px;
+    min-width: 350px;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.7rem;
+}
+
+.col-img {
+    background-color: hsl(277, 64%, 61%);
+}
+
+.card-img-top {
+    mix-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.texto-morado {
+    color: hsl(277, 64%, 61%);
+}
+
+@include media-breakpoint-up(md) {
+    body {
+        height: 100vh;
+    }
+}
